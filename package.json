@@ -1,0 +1,14 @@
+{
+  "name": "blog-man-api",
+  "version": "1.0.0",
+  "description": "AWS Lambda functions for managing blogs with authentication.",
+  "scripts": {
+    "dev": "nodemon --exec serverless offline",
+    "deploy": "serverless deploy",
+    "remove": "serverless remove"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "serverless-offline": "^12.0.4"
+  }
+}
