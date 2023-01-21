@@ -1,5 +1,7 @@
 {
   "name": "blog-man-api",
+  "type": "module",
+  "main": "handler.js",
   "version": "1.0.0",
   "description": "AWS Lambda functions for managing blogs with authentication.",
   "scripts": {
