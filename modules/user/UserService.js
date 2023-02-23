@@ -1,12 +1,12 @@
-import { Prisma } from "@prisma/client";
+import Service from "../service/Service.js";
 
-export class UserService {
+export default class UserService extends Service {
   constructor() {
-    this.prisma = new Prisma();
+    super();
   }
 
   async getUser(id) {
-    return this.prisma.user.findUnique({
+    return this.client.user.findUnique({
       where: {
         id,
       },

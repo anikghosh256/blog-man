@@ -1,15 +1,7 @@
-
-
-export const handler = async (event, context, callback) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: "Go Serverless v3.0! Your function executed successfully!",
-        input: event,
-      },
-      null,
-      2
-    ),
-  };
-};
+"use strict";
+import UserController from "./UserController.js";
+const userController = new UserController();
+export async function home(event, context, callback) {
+  const response = await userController.getUser(event, context, callback);
+  return response;
+}
