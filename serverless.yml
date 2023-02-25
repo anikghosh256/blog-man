@@ -13,6 +13,12 @@ functions:
           path: /
           method: get
 
+  posts:
+    handler: modules/post/index.posts
+    events:
+      - httpApi:
+          path: /posts
+          method: get
 plugins:
   - serverless-offline
   - serverless-dotenv-plugin
