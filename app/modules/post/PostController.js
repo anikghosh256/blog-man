@@ -1,5 +1,5 @@
 import PostService from './PostService.js';
-import Controller from '../controller/Controller.js';
+import Controller from '../../controller/Controller.js';
 
 export default class Post extends Controller{
   constructor() {

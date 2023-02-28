@@ -1,4 +1,4 @@
-import Service from "../service/Service.js";
+import Service from "../../service/Service.js";
 
 export default class PostService extends Service {
   constructor() {

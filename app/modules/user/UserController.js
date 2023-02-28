@@ -1,5 +1,6 @@
 import UserService from './UserService.js';
-import Controller from '../controller/Controller.js';
+import Controller from '../../controller/Controller.js';
+
 export default class User extends Controller{
   constructor() {
     super();
