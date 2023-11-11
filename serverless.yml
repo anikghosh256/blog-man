@@ -14,7 +14,7 @@ functions:
           method: get
 
   posts:
-    handler: modules/post/index.posts
+    handler: app/modules/post/index.posts
     events:
       - httpApi:
           path: /posts
